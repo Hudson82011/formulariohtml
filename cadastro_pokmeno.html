@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemons</title>
+</head>
+<body>
+
+    <div>
+       <!-- <header>
+            <h2>Nome do pokemon</h2>
+        </header>
+    -->
+        <h3>Nome do seu pokemon</h3>
+        <input id="campo-nome" type="text" name="nome" value="">
+
+</div>
+
+        <div class="pricing-levels-3">
+            <p><strong>Selecione o tipo do seu pokemon (Máximo 2- Minimo 1)</strong></p>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Aço">Aço<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Dragão">Dragão<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Elétrico">Elétrico<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Fada">Fada<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Fantasma">Fantasma<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Fogo">Fogo<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Gelo">Gelo<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Inseto">Inseto<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Lutador">Lutador<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Normal">Normal<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Pedra">Pedra<br> 
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Planta">Planta<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Psíquico">Psíquico<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Sombrio">Sombrio<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Terra">Terra<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Venenoso">Venenoso<br>
+            <input class="single-checkbox" type="checkbox" name="type[]" value="Voador">Voador<br>
+            
+          </div>
+
+          <div>
+           
+                <!-- <header>
+                     <h2>Nome do pokemon</h2>
+                 </header>
+             -->
+                 <h3>HP</h3>
+                 <input id="campo-vida" type="number" name="vida" value="" min="1" max="255" >
+                 <h3>Ataque</h3>
+                 <input id="campo-ataque" type="number" name="ataque" value="">
+                 <h3>Defesa</h3>
+                 <input id="campo-defesa" type="number" name="defesa" value="">
+                 <h3>Velocidade</h3>
+                 <input id="campo-velocidade" type="number" name="velocidade" value="">
+                 <h3>Ataque especial</h3>
+                 <input id="campo-ataque-especial" type="number" name="ataque-especial" value="">
+                 <h3>Defesa especial</h3>
+                 <input id="campo-defesa-especial" type="number" name="defesa-especial" value="">
+         
+         
+          </div>
+          
+          
+
+          <div>
+
+            <h3>Geração</h3>
+
+                 <input id="geracao" type="number" name="geracao" value="" min="1" max="7">
+                 <fieldset>
+                    <legend>É um pokémon lendario?</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="lendario" id="Sim" >
+                            <label for="Sim">Sim</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="lendario" id="Não" checked>
+                            <label for="Não">Não</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+
+          </div>
+
+
+          <div>
+            <p><strong>Selecione a cor do seu pokémon</strong></p>
+            <input class="single-checkbox" type="radio" name="cor" value="Amarelo" checked>Amarelo<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Azul">Azul<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Branco">Branco<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Cinza">Cinza<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Marrom">Marrom<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Preto">Preto<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Rosa">Rosa<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Roxo">Roxo<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Verde">Verde<br>
+            <input class="single-checkbox" type="radio" name="cor" value="Vermelho">Vermelho<br>
+      
+            
+          </div>
+
+
+          <div>
+            <h3>Altura</h3>
+            <input id="campo-altura" type="number" name="altura" value="">
+
+            <h3>Peso</h3>
+                
+                 <input id="campo-peso" type="number" name="peso" value="">
+
+                 <h3>Taxa de captura</h3>
+                
+                 <input id="campo-tx" type="number" name="taxa de captura" value="" min="0" max="255" >
+
+          </div>
+
+         
+            <button type="submit" onclick="submitform()">Gravar</button>
+
+
+
+            <p></p>
+            <p></p>
+            <div >
+                <table id="tablePok" style=" border: 1px solid black;">
+                </table>
+            </div>
+
+
+</body>
+
+
+
+
+</html>
